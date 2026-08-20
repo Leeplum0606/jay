@@ -206,7 +206,7 @@
             box-shadow: 0 2px 8px rgba(255,255,255,0.1);
         }
 
-        /* 2. 홈 화면 (위젯 및 문구 제거 버전) */
+        /* 2. 홈 화면 */
         .home-screen {
             justify-content: center;
             align-items: center;
@@ -248,23 +248,6 @@
             font-size: 11px; color: #44556b; font-weight: 600; text-shadow: 0 1px 2px rgba(255,255,255,0.8); 
             text-align: center; white-space: nowrap;
         }
-        
-        .app-icon.full-width {
-            width: 100%;
-            grid-column: span 4;
-            flex-direction: row;
-            background: rgba(255, 255, 255, 0.85);
-            padding: 10px 16px;
-            border-radius: 20px;
-            border: 2px solid #b8d0e8;
-            margin-top: 5px;
-            justify-content: flex-start;
-            gap: 14px;
-            box-shadow: 0 6px 16px rgba(100, 130, 165, 0.2);
-            box-sizing: border-box;
-        }
-        .app-icon.full-width .app-box { width: 38px; height: 38px; font-size: 20px; margin-bottom: 0; border-radius: 12px; }
-        .app-icon.full-width .app-name { font-size: 13px; font-weight: 700; color: #334455; }
 
         /* 앱 내부 공통 헤더 */
         .app-header {
@@ -328,7 +311,7 @@
             color: #aaa; font-style: italic; font-size: 13px;
         }
 
-        /* 프로필 페이지 스타일 (이미지 박스 제거) */
+        /* 프로필 페이지 스타일 */
         .profile-box {
             background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 14px; padding: 14px 16px; margin-bottom: 12px; font-size: 14px; line-height: 1.5;
@@ -352,235 +335,77 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             box-sizing: border-box;
         }
-        .naver-back-arrow {
-            font-size: 20px;
-            color: #fff;
-            cursor: pointer;
-        }
+        .naver-back-arrow { font-size: 20px; color: #fff; cursor: pointer; }
         .naver-search-input-box {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 24px;
-            padding: 8px 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 15px;
-            color: #fff;
-            font-weight: 400;
-            box-sizing: border-box;
+            flex: 1; background: rgba(255, 255, 255, 0.08); border-radius: 24px;
+            padding: 8px 16px; display: flex; align-items: center; justify-content: space-between;
+            font-size: 15px; color: #fff; font-weight: 400; box-sizing: border-box;
         }
-        .naver-search-icon {
-            color: #03c75a;
-            font-size: 18px;
-            font-weight: bold;
-        }
+        .naver-search-icon { color: #03c75a; font-size: 18px; font-weight: bold; }
         .naver-history-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 20px 8px 20px;
-            font-size: 14px;
-            color: #aaa;
-            font-weight: 500;
-            box-sizing: border-box;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 16px 20px 8px 20px; font-size: 14px; color: #aaa; font-weight: 500;
         }
-        .naver-history-clear {
-            color: #888;
-            font-size: 13px;
-            cursor: pointer;
-        }
-        .naver-history-list {
-            display: flex;
-            flex-direction: column;
-            overflow-y: auto;
-            flex: 1;
-            padding-bottom: 20px;
-            box-sizing: border-box;
-        }
+        .naver-history-clear { color: #888; font-size: 13px; cursor: pointer; }
+        .naver-history-list { display: flex; flex-direction: column; overflow-y: auto; flex: 1; padding-bottom: 20px; }
         .naver-history-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 12px 20px;
-            cursor: pointer;
-            transition: background 0.15s ease;
-            box-sizing: border-box;
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 12px 20px; cursor: pointer; transition: background 0.15s ease;
         }
-        .naver-history-item:hover {
-            background: rgba(255, 255, 255, 0.04);
-        }
-        .naver-item-left {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-        .naver-clock-icon {
-            color: #aaa;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .naver-keyword {
-            font-size: 15px;
-            color: #f0f0f0;
-            font-weight: 400;
-        }
-        .naver-item-right {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .naver-date {
-            font-size: 13px;
-            color: #888;
-        }
-        .naver-delete-btn {
-            font-size: 14px;
-            color: #777;
-            cursor: pointer;
-            padding: 2px 4px;
-        }
-        .naver-delete-btn:hover {
-            color: #fff;
-        }
+        .naver-history-item:hover { background: rgba(255, 255, 255, 0.04); }
+        .naver-item-left { display: flex; align-items: center; gap: 14px; }
+        .naver-clock-icon { color: #aaa; font-size: 14px; }
+        .naver-keyword { font-size: 15px; color: #f0f0f0; }
+        .naver-item-right { display: flex; align-items: center; gap: 12px; }
+        .naver-date { font-size: 13px; color: #888; }
+        .naver-delete-btn { font-size: 14px; color: #777; cursor: pointer; }
 
         /* [유튜브 시청기록 UI 스타일] */
         .youtube-screen {
-            background: #0f0f13 !important;
-            color: #ffffff !important;
-            padding: 48px 0 70px 0 !important;
+            background: #0f0f13 !important; color: #ffffff !important; padding: 48px 0 70px 0 !important;
         }
         .yt-top-bar {
-            display: flex;
-            align-items: center;
-            padding: 10px 16px 12px 16px;
-            gap: 12px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            box-sizing: border-box;
+            display: flex; align-items: center; padding: 10px 16px 12px 16px; gap: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-sizing: border-box;
         }
-        .yt-back-arrow {
-            font-size: 20px;
-            color: #fff;
-            cursor: pointer;
-        }
+        .yt-back-arrow { font-size: 20px; color: #fff; cursor: pointer; }
         .yt-search-input-box {
-            flex: 1;
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 24px;
-            padding: 8px 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-size: 15px;
-            color: #fff;
-            font-weight: 400;
-            box-sizing: border-box;
+            flex: 1; background: rgba(255, 255, 255, 0.08); border-radius: 24px; padding: 8px 16px;
+            display: flex; align-items: center; justify-content: space-between; font-size: 15px; color: #fff;
         }
-        .yt-mic-icon {
-            font-size: 16px;
-            color: #fff;
-        }
-        .yt-history-list {
-            display: flex;
-            flex-direction: column;
-            overflow-y: auto;
-            flex: 1;
-            padding: 8px 0;
-            box-sizing: border-box;
-        }
+        .yt-mic-icon { font-size: 16px; color: #fff; }
+        .yt-history-list { display: flex; flex-direction: column; overflow-y: auto; flex: 1; padding: 8px 0; }
         .yt-history-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background 0.15s ease;
-            box-sizing: border-box;
+            display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; cursor: pointer;
         }
-        .yt-history-item:hover {
-            background: rgba(255, 255, 255, 0.04);
-        }
-        .yt-item-left {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            flex: 1;
-            min-width: 0;
-        }
-        .yt-clock-icon {
-            color: #aaa;
-            font-size: 16px;
-            flex-shrink: 0;
-        }
-        .yt-keyword {
-            font-size: 15px;
-            color: #f0f0f0;
-            font-weight: 400;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .yt-item-right {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            flex-shrink: 0;
-            margin-left: 10px;
-        }
-        .yt-thumbnail {
-            width: 72px;
-            height: 40px;
-            background: #2a2a32;
-            border-radius: 6px;
-            object-fit: cover;
-        }
-        .yt-arrow-icon {
-            color: #aaa;
-            font-size: 16px;
-        }
+        .yt-history-item:hover { background: rgba(255, 255, 255, 0.04); }
+        .yt-item-left { display: flex; align-items: center; gap: 16px; flex: 1; min-width: 0; }
+        .yt-clock-icon { color: #aaa; font-size: 16px; flex-shrink: 0; }
+        .yt-keyword { font-size: 15px; color: #f0f0f0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .yt-item-right { display: flex; align-items: center; gap: 14px; flex-shrink: 0; margin-left: 10px; }
+        .yt-thumbnail { width: 72px; height: 40px; background: #2a2a32; border-radius: 6px; object-fit: cover; }
+        .yt-arrow-icon { color: #aaa; font-size: 16px; }
 
         /* 지도 시뮬레이션 스타일 */
         .map-simulator {
-            width: 100%;
-            height: 380px;
-            background: #1a222d;
-            border-radius: 16px;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-sizing: border-box;
+            width: 100%; height: 380px; background: #1a222d; border-radius: 16px; position: relative;
+            overflow: hidden; border: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: center; align-items: center;
         }
         .map-bg-line {
             position: absolute; width: 100%; height: 100%;
-            background-image: 
-                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
             background-size: 30px 30px;
         }
         .map-pin-pulse {
-            position: absolute;
-            top: 45%; left: 52%;
-            transform: translate(-50%, -50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            z-index: 5;
+            position: absolute; top: 45%; left: 52%; transform: translate(-50%, -50%); display: flex; flex-direction: column; align-items: center; z-index: 5;
         }
         .pin-dot {
-            width: 22px; height: 22px; background: #ff3b30; border-radius: 50%;
-            border: 3px solid #fff; box-shadow: 0 0 20px rgba(255,59,48,0.8);
+            width: 22px; height: 22px; background: #ff3b30; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 20px rgba(255,59,48,0.8);
             animation: pulse 1.8s infinite;
         }
         .pin-label {
-            background: rgba(0, 0, 0, 0.85); color: #fff; padding: 6px 12px;
-            border-radius: 12px; font-size: 12px; font-weight: 600; margin-top: 8px;
-            white-space: nowrap; border: 1px solid rgba(255,255,255,0.2);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            background: rgba(0, 0, 0, 0.85); color: #fff; padding: 6px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; margin-top: 8px;
+            border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
         @keyframes pulse {
             0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7); }
@@ -588,23 +413,70 @@
             100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 59, 48, 0); }
         }
 
-        /* 캘린더 스타일 */
+        /* [개선된 캘린더 스타일] */
+        .calendar-container {
+            display: flex; flex-direction: column; gap: 12px; padding-bottom: 20px;
+        }
+        /* 월별 미니 뷰 카드 그리드 (6개 월을 2열로 배치) */
+        .month-grid-list {
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
+        }
+        .mini-month-card {
+            background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px; padding: 10px; cursor: pointer; transition: all 0.2s ease;
+            box-sizing: border-box; text-align: center;
+        }
+        .mini-month-card:hover {
+            background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        .mini-month-title {
+            font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 6px;
+        }
+        .mini-days-grid {
+            display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; font-size: 9px; color: #777;
+        }
+        .mini-day {
+            aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; border-radius: 3px;
+        }
+        .mini-day.has-event {
+            background: #ff3b30; color: #fff; font-weight: bold;
+        }
+        .mini-day.is-today {
+            border: 1px solid #007aff; color: #007aff; font-weight: bold;
+        }
+
+        /* 확대된 상세 캘린더 뷰 모달 / 화면 */
+        .calendar-detail-view {
+            display: none; flex-direction: column; gap: 12px;
+        }
+        .calendar-detail-view.active {
+            display: flex;
+        }
+        .back-to-list-btn {
+            background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff; padding: 8px 14px; border-radius: 10px; font-size: 13px; cursor: pointer;
+            align-self: flex-start; font-weight: 500;
+        }
         .calendar-box {
-            background: rgba(255,255,255,0.05); border-radius: 18px; padding: 20px;
-            border: 1px solid rgba(255,255,255,0.08); text-align: center;
-            box-sizing: border-box;
+            background: rgba(255,255,255,0.05); border-radius: 18px; padding: 16px;
+            border: 1px solid rgba(255,255,255,0.08); text-align: center; box-sizing: border-box;
         }
         .calendar-grid {
-            display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 15px; font-size: 14px;
+            display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-top: 12px; font-size: 13px;
         }
-        .cal-day-header { color: #888; font-size: 12px; font-weight: 600; padding-bottom: 6px; }
+        .cal-day-header { color: #888; font-size: 11px; font-weight: 600; padding-bottom: 4px; }
         .cal-date-cell {
             aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;
-            border-radius: 10px; font-weight: 500; color: #ddd;
+            border-radius: 8px; font-weight: 500; color: #ddd; font-size: 12px;
         }
         .cal-date-cell.marked {
             background: #ff3b30; color: #fff; font-weight: 700; cursor: pointer;
-            box-shadow: 0 4px 12px rgba(255,59,48,0.4);
+            box-shadow: 0 4px 10px rgba(255,59,48,0.4);
+        }
+        .cal-date-cell.today-marked {
+            background: #007aff; color: #fff; font-weight: 700; cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,122,255,0.4);
         }
 
         /* 하단 네비게이션 바 & 홈 인디케이터 */
@@ -615,9 +487,7 @@
             padding: 0 30px; box-sizing: border-box;
             border-top: 1px solid rgba(255,255,255,0.06); z-index: 10;
         }
-        .nav-btn {
-            background: none; border: none; color: #aaa; font-size: 14px; font-weight: 500; cursor: pointer;
-        }
+        .nav-btn { background: none; border: none; color: #aaa; font-size: 14px; font-weight: 500; cursor: pointer; }
         .nav-btn:hover { color: #fff; }
         .home-indicator {
             position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);
@@ -650,7 +520,7 @@
         </div>
     </div>
 
-    <!-- 2. 홈 화면 (위젯, 한자, 강아지 이모티콘 제거됨) -->
+    <!-- 2. 홈 화면 -->
     <div id="home" class="screen home-screen">
         <div class="app-dock-layout">
             <div class="app-row">
@@ -693,7 +563,7 @@
         </div>
     </div>
 
-    <!-- 3. 캐릭터 프로필 화면 (이미지 칸 삭제됨) -->
+    <!-- 3. 캐릭터 프로필 화면 -->
     <div id="profile" class="screen">
         <div class="app-header">캐릭터 프로필</div>
 
@@ -749,106 +619,10 @@
             <span class="naver-history-clear">전체삭제</span>
         </div>
         <div class="naver-history-list">
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">가볍게 읽기 좋은 책</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.20.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">20대 쇼핑몰</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.20.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">소형카메라 설치 불법?</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.20.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">소형카메라 추천</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.20.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">위치추적 어플 추천</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.20.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">SNS 알아내는 법</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.20.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">동생 생일선물 추천</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.19.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">20대 유행하는 브랜드</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.19.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">동생이 반항하면</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.18.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
-            <div class="naver-history-item">
-                <div class="naver-item-left">
-                    <span class="naver-clock-icon">🕒</span>
-                    <span class="naver-keyword">동생이 귀가가 늦을 때</span>
-                </div>
-                <div class="naver-item-right">
-                    <span class="naver-date">08.18.</span>
-                    <span class="naver-delete-btn">✕</span>
-                </div>
-            </div>
+            <div class="naver-history-item"><div class="naver-item-left"><span class="naver-clock-icon">🕒</span><span class="naver-keyword">가볍게 읽기 좋은 책</span></div><div class="naver-item-right"><span class="naver-date">08.20.</span><span class="naver-delete-btn">✕</span></div></div>
+            <div class="naver-history-item"><div class="naver-item-left"><span class="naver-clock-icon">🕒</span><span class="naver-keyword">20대 쇼핑몰</span></div><div class="naver-item-right"><span class="naver-date">08.20.</span><span class="naver-delete-btn">✕</span></div></div>
+            <div class="naver-history-item"><div class="naver-item-left"><span class="naver-clock-icon">🕒</span><span class="naver-keyword">소형카메라 설치 불법?</span></div><div class="naver-item-right"><span class="naver-date">08.20.</span><span class="naver-delete-btn">✕</span></div></div>
+            <div class="naver-history-item"><div class="naver-item-left"><span class="naver-clock-icon">🕒</span><span class="naver-keyword">위치추적 어플 추천</span></div><div class="naver-item-right"><span class="naver-date">08.20.</span><span class="naver-delete-btn">✕</span></div></div>
         </div>
     </div>
 
@@ -862,100 +636,75 @@
             </div>
         </div>
         <div class="yt-history-list">
-            <div class="yt-history-item">
-                <div class="yt-item-left">
-                    <span class="yt-clock-icon">🕒</span>
-                    <span class="yt-keyword">가스라이팅이란 무엇인가</span>
-                </div>
-                <div class="yt-item-right">
-                    <div class="yt-thumbnail"></div>
-                    <span class="yt-arrow-icon">↗</span>
-                </div>
-            </div>
-            <div class="yt-history-item">
-                <div class="yt-item-left">
-                    <span class="yt-clock-icon">🕒</span>
-                    <span class="yt-keyword">스스로를 통제하기 어려울 때</span>
-                </div>
-                <div class="yt-item-right">
-                    <div class="yt-thumbnail"></div>
-                    <span class="yt-arrow-icon">↗</span>
-                </div>
-            </div>
-            <div class="yt-history-item">
-                <div class="yt-item-left">
-                    <span class="yt-clock-icon">🕒</span>
-                    <span class="yt-keyword">심리학 강연 및 감정 조절법</span>
-                </div>
-                <div class="yt-item-right">
-                    <div class="yt-thumbnail"></div>
-                    <span class="yt-arrow-icon">↗</span>
-                </div>
-            </div>
-            <div class="yt-history-item">
-                <div class="yt-item-left">
-                    <span class="yt-clock-icon">🕒</span>
-                    <span class="yt-keyword">그리운 사람이 보고싶을 때 ASMR</span>
-                </div>
-                <div class="yt-item-right">
-                    <div class="yt-thumbnail"></div>
-                    <span class="yt-arrow-icon">↗</span>
-                </div>
-            </div>
-            <div class="yt-history-item">
-                <div class="yt-item-left">
-                    <span class="yt-clock-icon">🕒</span>
-                    <span class="yt-keyword">부모님 기일에 마음가짐</span>
-                </div>
-                <div class="yt-item-right">
-                    <div class="yt-thumbnail"></div>
-                    <span class="yt-arrow-icon">↗</span>
-                </div>
-            </div>
+            <div class="yt-history-item"><div class="yt-item-left"><span class="yt-clock-icon">🕒</span><span class="yt-keyword">가스라이팅이란 무엇인가</span></div><div class="yt-item-right"><div class="yt-thumbnail"></div><span class="yt-arrow-icon">↗</span></div></div>
+            <div class="yt-history-item"><div class="yt-item-left"><span class="yt-clock-icon">🕒</span><span class="yt-keyword">스스로를 통제하기 어려울 때</span></div><div class="yt-item-right"><div class="yt-thumbnail"></div><span class="yt-arrow-icon">↗</span></div></div>
+            <div class="yt-history-item"><div class="yt-item-left"><span class="yt-clock-icon">🕒</span><span class="yt-keyword">그리운 사람이 보고싶을 때 ASMR</span></div><div class="yt-item-right"><div class="yt-thumbnail"></div><span class="yt-arrow-icon">↗</span></div></div>
         </div>
     </div>
 
-    <!-- 6. 캘린더 앱 -->
+    <!-- 6. 캘린더 앱 (6월~12월 전체 보기 & 클릭 확대 기능) -->
     <div id="calendar" class="screen">
-        <div class="app-header">📅 캘린더</div>
-        <div class="calendar-box">
-            <div style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px;">2026년 12월</div>
-            <div class="calendar-grid">
-                <div class="cal-day-header">일</div>
-                <div class="cal-day-header">월</div>
-                <div class="cal-day-header">화</div>
-                <div class="cal-day-header">수</div>
-                <div class="cal-day-header">목</div>
-                <div class="cal-day-header">금</div>
-                <div class="cal-day-header">토</div>
-                
-                <div class="cal-date-cell" style="color:#555;">29</div>
-                <div class="cal-date-cell" style="color:#555;">30</div>
-                <div class="cal-date-cell">1</div>
-                <div class="cal-date-cell">2</div>
-                <div class="cal-date-cell">3</div>
-                <div class="cal-date-cell">4</div>
-                <div class="cal-date-cell">5</div>
-                
-                <div class="cal-date-cell">6</div>
-                <div class="cal-date-cell">7</div>
-                <div class="cal-date-cell">8</div>
-                <div class="cal-date-cell">9</div>
-                <div class="cal-date-cell">10</div>
-                <div class="cal-date-cell">11</div>
-                <div class="cal-date-cell marked" onclick="alert('12월 12일: 동생이랑 첫 만남\n\n내 전부이자 온 세상이 시작된 날.')">12</div>
-                
-                <div class="cal-date-cell">13</div>
-                <div class="cal-date-cell">14</div>
-                <div class="cal-date-cell">15</div>
-                <div class="cal-date-cell">16</div>
-                <div class="cal-date-cell">17</div>
-                <div class="cal-date-cell">18</div>
-                <div class="cal-date-cell">19</div>
+        <div class="app-header">📅 캘린더 (2026)</div>
+        
+        <!-- 6개 월 미니 뷰 목록 -->
+        <div id="calendar-listView" class="calendar-container">
+            <div style="font-size: 13px; color: #aaa; margin-bottom: 4px;">원하는 월을 터치하면 상세 일정을 볼 수 있습니다.</div>
+            <div class="month-grid-list">
+                <!-- 6월 -->
+                <div class="mini-month-card" onclick="openMonth(6)">
+                    <div class="mini-month-title">6월</div>
+                    <div class="mini-days-grid" id="mini-6"></div>
+                </div>
+                <!-- 7월 -->
+                <div class="mini-month-card" onclick="openMonth(7)">
+                    <div class="mini-month-title">7월</div>
+                    <div class="mini-days-grid" id="mini-7"></div>
+                </div>
+                <!-- 8월 -->
+                <div class="mini-month-card" onclick="openMonth(8)">
+                    <div class="mini-month-title">8월</div>
+                    <div class="mini-days-grid" id="mini-8"></div>
+                </div>
+                <!-- 9월 -->
+                <div class="mini-month-card" onclick="openMonth(9)">
+                    <div class="mini-month-title">9월</div>
+                    <div class="mini-days-grid" id="mini-9"></div>
+                </div>
+                <!-- 10월 -->
+                <div class="mini-month-card" onclick="openMonth(10)">
+                    <div class="mini-month-title">10월</div>
+                    <div class="mini-days-grid" id="mini-10"></div>
+                </div>
+                <!-- 11월 -->
+                <div class="mini-month-card" onclick="openMonth(11)">
+                    <div class="mini-month-title">11월</div>
+                    <div class="mini-days-grid" id="mini-11"></div>
+                </div>
+                <!-- 12월 -->
+                <div class="mini-month-card" onclick="openMonth(12)">
+                    <div class="mini-month-title">12월</div>
+                    <div class="mini-days-grid" id="mini-12"></div>
+                </div>
             </div>
         </div>
-        <div style="margin-top: 15px; font-size: 13px; color: #aaa; text-align: center;">
-            * 12월 12일 날짜를 터치해보세요.
+
+        <!-- 특정 월 상세 확대 뷰 -->
+        <div id="calendar-detailView" class="calendar-detail-view">
+            <button class="back-to-list-btn" onclick="backToList()">← 전체 월 보기</button>
+            <div class="calendar-box">
+                <div id="detail-month-title" style="font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 10px;"></div>
+                <div class="calendar-grid">
+                    <div class="cal-day-header">일</div>
+                    <div class="cal-day-header">월</div>
+                    <div class="cal-day-header">화</div>
+                    <div class="cal-day-header">수</div>
+                    <div class="cal-day-header">목</div>
+                    <div class="cal-day-header">금</div>
+                    <div class="cal-day-header">토</div>
+                </div>
+                <div id="detail-days-grid" class="calendar-grid" style="margin-top: 6px;"></div>
+            </div>
+            <div id="detail-hint" style="margin-top: 10px; font-size: 13px; color: #aaa; text-align: center;"></div>
         </div>
     </div>
 
@@ -979,34 +728,9 @@
     <div id="call" class="screen">
         <div class="app-header">통화 기록</div>
         <div class="call-list">
-            <div class="call-item">
-                <span class="call-name fav">내 동생♥️</span>
-                <span style="font-size:12px; color:#777;">방금 전 (오전 10:58)</span>
-            </div>
-            <div class="call-item">
-                <span class="call-name fav">내 동생♥️</span>
-                <span style="font-size:12px; color:#777;">오늘 오전 08:30</span>
-            </div>
-            <div class="call-item">
-                <span class="call-name work">클라이언트</span>
-                <span style="font-size:12px; color:#777;">오늘 오전 07:15</span>
-            </div>
-            <div class="call-item">
-                <span class="call-name fav">내 동생♥️</span>
-                <span style="font-size:12px; color:#777;">어제 오후 11:20</span>
-            </div>
-            <div class="call-item">
-                <span class="call-name fav">내 동생♥️</span>
-                <span style="font-size:12px; color:#777;">어제 오후 06:40</span>
-            </div>
-            <div class="call-item">
-                <span class="call-name work">담당자</span>
-                <span style="font-size:12px; color:#777;">어제 오후 02:10</span>
-            </div>
-            <div class="call-item">
-                <span class="call-name fav">내 동생♥️</span>
-                <span style="font-size:12px; color:#777;">어제 오전 09:05</span>
-            </div>
+            <div class="call-item"><span class="call-name fav">내 동생♥️</span><span style="font-size:12px; color:#777;">방금 전 (오전 10:58)</span></div>
+            <div class="call-item"><span class="call-name fav">내 동생♥️</span><span style="font-size:12px; color:#777;">오늘 오전 08:30</span></div>
+            <div class="call-item"><span class="call-name work">클라이언트</span><span style="font-size:12px; color:#777;">오늘 오전 07:15</span></div>
         </div>
     </div>
 
@@ -1014,27 +738,6 @@
     <div id="msg" class="screen">
         <div class="app-header">내 동생♥️</div>
         <div class="chat-container">
-            <div class="chat-date-divider">8월 17일</div>
-            <div class="bubble outgoing">술자리 많이 늦어? 너무 늦으면 피곤할텐데..</div>
-            <div class="bubble outgoing">연락 너무 없어서 걱정된다.</div>
-            <div class="bubble outgoing">술 많이 마시면 속아프니까 조심하고.</div>
-            <div class="bubble outgoing">알았지?</div>
-            <div class="bubble outgoing">문자 보고 있는거야?</div>
-            <div class="bubble outgoing">문자 보면 연락 꼭 해줘. 걱정되니까.</div>
-
-            <div class="chat-date-divider">8월 18일</div>
-            <div class="bubble outgoing">배 안고파?</div>
-            <div class="bubble outgoing">저녁에 뭐 먹고 싶어?</div>
-            <div class="bubble incoming">아무거나~</div>
-            <div class="bubble outgoing">아무거나가 제일 어려운데 ㅋㅋ</div>
-            <div class="bubble outgoing">동생 좋아하는거 차려놓을게</div>
-
-            <div class="chat-date-divider">어제</div>
-            <div class="bubble outgoing">오고 있어?</div>
-            <div class="bubble outgoing">데리러 갈까?</div>
-            <div class="bubble incoming">아냐 알아서 갈게! 금방 가!</div>
-            <div class="bubble outgoing">얼른 보고싶어서 그러지. 얼른 와 내 동생♥️</div>
-
             <div class="chat-date-divider">오늘</div>
             <div class="bubble outgoing">동생~ 어디야?</div>
             <div class="bubble incoming">친구네 가는 중!</div>
@@ -1048,10 +751,8 @@
         <div class="memo-content">
             <b style="font-size: 15px;">[웹개발 업무 및 일정]</b>
             <ul>
-                <li>A사 쇼핑몰 반응형 UI 리팩토링 검토</li>
-                <li>B스타트업 랜딩페이지 퍼블리싱 마감 (~수요일)</li>
-                <li>클라이언트 수정 요청 사항 반영 (API 연동 오류 체크)</li>
-                <li>포트폴리오 소스 코드 백업 및 정리</li>
+                <li>B스타트업 랜딩페이지 퍼블리싱 마감</li>
+                <li>클라이언트 수정 요청 사항 반영</li>
             </ul>
         </div>
         <div class="memo-content" style="margin-bottom: 20px;">
@@ -1059,13 +760,10 @@
             <ul>
                 <li>장보기, 동생 먹고싶은 거 위주로</li>
                 <li>부모님 묘소 방문 준비</li>
-                <li>동생 선물, 악세사리?</li>
-                <li>주변에 이상한 친구는 없는지...</li>
             </ul>
             <div class="secret-note">
-                이상해보여도 상관없어. 동생은 내 전부인데.<br>
-                전부를 버리는 건 말도 안되잖아. 그치.<br>
-                ....모르겠다. 멈출 수 없어.
+                이상해보여도 상관없어. 동생은 내 세계인데.<br>
+                세계를 버리는 건 말도 안되잖아. 그치.
             </div>
         </div>
     </div>
@@ -1102,6 +800,98 @@
             showScreen('home');
         }
     }
+
+    // 캘린더 데이터 설정 (2026년 기준)
+    const calendarData = {
+        6: { totalDays: 30, startDay: 1, events: { 20: "내 생일, 고마워 동생아♥️" } },
+        7: { totalDays: 31, startDay: 3, events: { 30: "바다 보러 간 날" } },
+        8: { totalDays: 30, startDay: 2, events: { 15: "부모님 기일 (묘소 방문)" } },
+        9: { totalDays: 31, startDay: 4, events: { 10: "부모님 결혼기념일" } },
+        10: { totalDays: 30, startDay: 0, events: { 11: "빼빼로 만들어주기" } },
+        11: { totalDays: 31, startDay: 2, events: { 12: "처음 만난 날" } }
+    };
+
+    // 미니 캘린더 미리보기 자동 생성
+    function initMiniCalendars() {
+        for (let m = 6; m <= 12; m++) {
+            const grid = document.getElementById(`mini-${m}`);
+            if (!grid) continue;
+            grid.innerHTML = '';
+            const info = calendarData[m];
+            
+            // 빈 칸 채우기
+            for (let i = 0; i < info.startDay; i++) {
+                const empty = document.createElement('div');
+                empty.className = 'mini-day';
+                grid.appendChild(empty);
+            }
+            // 날짜 채우기
+            for (let d = 1; d <= info.totalDays; d++) {
+                const dayEl = document.createElement('div');
+                dayEl.className = 'mini-day';
+                dayEl.textContent = d;
+                if (info.events[d]) {
+                    if (m === 8 && d === 20) {
+                        dayEl.classList.add('is-today'); // 오늘 표시
+                    } else {
+                        dayEl.classList.add('has-event'); // 기념일 표시
+                    }
+                }
+                grid.appendChild(dayEl);
+            }
+        }
+    }
+
+    // 특정 월 확대 보기
+    function openMonth(monthNum) {
+        document.getElementById('calendar-listView').style.display = 'none';
+        const detailView = document.getElementById('calendar-detailView');
+        detailView.classList.add('active');
+
+        document.getElementById('detail-month-title').textContent = `2026년 ${monthNum}월`;
+        const detailGrid = document.getElementById('detail-days-grid');
+        detailGrid.innerHTML = '';
+
+        const info = calendarData[monthNum];
+
+        // 빈 칸 추가
+        for (let i = 0; i < info.startDay; i++) {
+            const empty = document.createElement('div');
+            empty.className = 'cal-date-cell';
+            detailGrid.appendChild(empty);
+        }
+
+        // 날짜 추가
+        for (let d = 1; d <= info.totalDays; d++) {
+            const cell = document.createElement('div');
+            cell.className = 'cal-date-cell';
+            cell.textContent = d;
+
+            if (info.events[d]) {
+                if (monthNum === 8 && d === 20) {
+                    cell.classList.add('today-marked');
+                    cell.onclick = () => alert(`8월 20일 (오늘)\n\n${info.events[d]}`);
+                } else {
+                    cell.classList.add('marked');
+                    cell.onclick = () => alert(`${monthNum}월 ${d}일\n\n${info.events[d]}`);
+                }
+            }
+            detailGrid.appendChild(cell);
+        }
+
+        document.getElementById('detail-hint').textContent = `* 빨간색 또는 파란색으로 표시된 날짜를 터치해보세요.`;
+    }
+
+    // 전체 월 보기로 돌아가기
+    function backToList() {
+        document.getElementById('calendar-detailView').classList.remove('active');
+        document.getElementById('calendar-listView').style.display = 'flex';
+    }
+
+    // 페이지 로드시 미니 캘린더 초기화 실행
+    window.onload = function() {
+        initMiniCalendars();
+    };
 </script>
 
 </body>
